@@ -21,7 +21,6 @@ public class SearchActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_search);
         Bundle extras=getIntent().getExtras();
         boolean is_theme_white;
         is_theme_white = extras.getBoolean("is_theme_white");

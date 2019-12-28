@@ -18,7 +18,6 @@ public class MainActivity extends BaseActivity {
 
     boolean is_theme_white = false;
 
-   // private ConstraintLayout layout;
     private Button black_theme;
     private Button white_theme;
     private Button search;
@@ -39,7 +38,6 @@ public class MainActivity extends BaseActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //layout = findViewById(R.id.layout);
         black_theme = findViewById(R.id.black_theme);
         white_theme = findViewById(R.id.white_theme);
         search = findViewById(R.id.Search);
@@ -124,16 +122,6 @@ public class MainActivity extends BaseActivity {
             }
         });
     }
-/*
-    public void colorSet(button){
-        if((button3.color == white || set==1) {
-            text.setTextColor(Color.RED);
-            button3.setTextColor(Color.RED);
-        }
-        if(())
-    }
-  */
-
     public void onActivityResult(int requestCode, int resultCode, Intent data){
         if(requestCode == GET_STRING){
             if(resultCode == RESULT_OK){
