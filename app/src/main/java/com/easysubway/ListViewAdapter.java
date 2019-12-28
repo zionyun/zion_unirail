@@ -12,9 +12,12 @@ import java.util.ArrayList;
 
 public class ListViewAdapter extends BaseAdapter {
     Context context;
+    boolean is_white;
     private ArrayList<ListViewItem> listViewItemList = new ArrayList<>();
 
-    public ListViewAdapter(){}
+    public ListViewAdapter(boolean is_white){
+        this.is_white=is_white;
+    }
 
     @Override
     public int getCount() {
@@ -29,7 +32,10 @@ public class ListViewAdapter extends BaseAdapter {
         if (convertView == null) {
             LayoutInflater inflater
                     = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.listview_item, parent, false);
+            if(is_white==false)
+            convertView = inflater.inflate(R.layout.listview_item_black, parent, false);
+            else
+                convertView = inflater.inflate(R.layout.listview_item, parent, false);
         }
 
         TextView textView        = (TextView)convertView.findViewById(R.id.subwaytitle);

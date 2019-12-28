@@ -16,7 +16,7 @@ import java.util.Iterator;
 public class SearchActivity extends Activity {
     public static MyMenu menu = new MyMenu();
     ArrayList<String> items = new ArrayList<>();
-    ListViewAdapter     adapter = new ListViewAdapter();
+    ListViewAdapter     adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,8 @@ public class SearchActivity extends Activity {
         Bundle extras=getIntent().getExtras();
         boolean is_theme_white;
         is_theme_white = extras.getBoolean("is_theme_white");
+        adapter = new ListViewAdapter(is_theme_white);
+
         if(extras.getBoolean("is_theme_white")==false)
         {
             setContentView(R.layout.activity_search_black);
@@ -50,10 +52,6 @@ public class SearchActivity extends Activity {
                 intent.putExtra("OpenAPIKey", WebViewInterface.openAPIKey);
                 intent.putExtra("SubwayLocationAPIKey", WebViewInterface.subwayLocationAPIKey);
                 intent.putExtra("StationNM", edit.getText().toString());
-               /* Bundle extra=getIntent().getExtras();
-                boolean is_theme_white;
-                is_theme_white = extra.getBoolean("is_theme_white");
-                intent.putExtra("is_theme_white", is_theme_white);*/
 
                 WebViewInterface.mContext.startActivity(intent);
                 startActivity(intent);
