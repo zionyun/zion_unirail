@@ -39,7 +39,7 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:includeFontPadding="false"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="26sp" />
 
     <LinearLayout
@@ -371,16 +371,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="45dp"
                 android:background="#000000"
-                android:textColor="#FFFFFF"
                 android:orientation="vertical"
                 android:paddingLeft="12dp"
-                android:paddingRight="12dp">
+                android:paddingRight="12dp"
+                android:textColor="#000000">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="첫차,막차 정보"
                     android:background="#000000"
+                    android:text="첫차,막차 정보"
                     android:textColor="#FFFFFF"
                     android:textSize="18sp" />
 
@@ -428,10 +428,10 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="27dp"
+                        android:background="#000000"
                         android:gravity="center"
                         android:text="첫차"
-                        android:background="#FFFFFF"
-                        android:textColor="#000000"
+                        android:textColor="#F4FD14"
                         android:textSize="12sp" />
 
                     <LinearLayout
@@ -454,10 +454,10 @@
                                 android:id="@+id/up_line_heading"
                                 android:layout_width="match_parent"
                                 android:layout_height="27dp"
-                                android:background="@drawable/under_line"
+                                android:background="#00000000"
                                 android:gravity="center"
                                 android:text="상행"
-                                android:textColor="#000000"
+                                android:textColor="#5AFF00"
                                 android:textSize="12sp" />
 
                             <LinearLayout
@@ -484,10 +484,10 @@
                                 android:id="@+id/down_line_heading"
                                 android:layout_width="match_parent"
                                 android:layout_height="27dp"
-                                android:background="@drawable/under_line"
+                                android:background="#00000000"
                                 android:gravity="center"
                                 android:text="하행"
-                                android:textColor="#000000"
+                                android:textColor="#5AFF00"
                                 android:textSize="12sp" />
 
                             <LinearLayout
@@ -502,8 +502,7 @@
                         <View
                             android:layout_width="1dp"
                             android:layout_height="match_parent"
-                            android:background="#d6d6d6"
-                            />
+                            android:background="#d6d6d6" />
 
                     </LinearLayout>
 
@@ -511,16 +510,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:background="#d6d6d6"
-                        android:textColor="#FFFFFF"/>
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="27dp"
                         android:layout_marginTop="6dp"
-                        android:background="@drawable/background_line"
+                        android:background="#00000000"
                         android:gravity="center"
                         android:text="막차"
-                        android:textColor="#000000"
+                        android:textColor="#F4FD14"
                         android:textSize="12sp" />
 
                     <LinearLayout
@@ -543,10 +542,10 @@
                                 android:id="@+id/up_line_heading_1"
                                 android:layout_width="match_parent"
                                 android:layout_height="27dp"
-                                android:background="@drawable/under_line"
+                                android:background="#00000000"
                                 android:gravity="center"
                                 android:text="상행"
-                                android:textColor="#000000"
+                                android:textColor="#5AFF00"
                                 android:textSize="12sp" />
 
                             <LinearLayout
@@ -572,10 +571,10 @@
                                 android:id="@+id/down_line_heading_1"
                                 android:layout_width="match_parent"
                                 android:layout_height="27dp"
-                                android:background="@drawable/under_line"
+                                android:background="#00000000"
                                 android:gravity="center"
                                 android:text="하행"
-                                android:textColor="#000000"
+                                android:textColor="#5AFF00"
                                 android:textSize="12sp" />
 
 
@@ -584,7 +583,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:orientation="vertical" />
+                                android:orientation="vertical"
+                                android:textColor="#FFFFFF" />
 
                         </LinearLayout>
 

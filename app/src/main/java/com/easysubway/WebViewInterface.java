@@ -28,6 +28,7 @@ public class WebViewInterface {
         intent.putExtra("OpenAPIKey", this.openAPIKey);
         intent.putExtra("SubwayLocationAPIKey", this.subwayLocationAPIKey);
         intent.putExtra("StationNM", station);
+
         this.mContext.startActivity(intent);
     }
 }
