@@ -22,9 +22,9 @@
 
         <ImageView
             android:id="@+id/btn_back_subway"
-            android:layout_width="wrap_content"
+            android:layout_width="36dp"
             android:layout_height="match_parent"
-            android:src="@drawable/btn_back_sub" />
+            android:src="@drawable/btn_back_subway_black" />
     </RelativeLayout>
 
     <View
@@ -83,10 +83,10 @@
 
                 <ImageView
                     android:id="@+id/btn_real_time_refresh"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="32dp"
+                    android:layout_height="24dp"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/btn_reflash_subway" />
+                    android:src="@drawable/btn_real_time_refresh_black" />
             </LinearLayout>
 
             <LinearLayout
@@ -397,7 +397,7 @@
                         android:layout_height="match_parent"
                         android:button="@drawable/selector_trafficsub_radio_type_b"
                         android:text=" 평일"
-                        android:textColor="#000000" />
+                        android:textColor="#FFFFFF" />
 
                     <RadioButton
                         android:id="@+id/interval_sat"
@@ -406,7 +406,7 @@
                         android:layout_marginLeft="20dp"
                         android:button="@drawable/selector_trafficsub_radio_type_b"
                         android:text=" 토요일"
-                        android:textColor="#000000" />
+                        android:textColor="#FFFFFF" />
 
                     <RadioButton
                         android:id="@+id/interval_holi"
@@ -415,7 +415,7 @@
                         android:layout_marginLeft="20dp"
                         android:button="@drawable/selector_trafficsub_radio_type_b"
                         android:text=" 휴일"
-                        android:textColor="#000000" />
+                        android:textColor="#FFFFFF" />
                 </RadioGroup>
 
                 <LinearLayout
@@ -502,14 +502,16 @@
                         <View
                             android:layout_width="1dp"
                             android:layout_height="match_parent"
-                            android:background="#d6d6d6" />
+                            android:background="#d6d6d6"
+                            />
 
                     </LinearLayout>
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="#d6d6d6" />
+                        android:background="#d6d6d6"
+                        android:textColor="#FFFFFF"/>
 
                     <TextView
                         android:layout_width="match_parent"
