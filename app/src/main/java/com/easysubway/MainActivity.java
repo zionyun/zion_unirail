@@ -93,6 +93,7 @@ public class MainActivity extends BaseActivity {
                         }
                 );
 
+//if절로 Onclick 제어하기.
         mContext = this;
         textmain = findViewById(R.id.textmain);
         Button button = (Button)findViewById(R.id.Search);
