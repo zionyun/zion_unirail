@@ -27,8 +27,13 @@
         </activity>
         <activity android:name=".TrafficSubwayInfo"></activity>
 
-        <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".StartSearchActivity"></activity>
+        <activity android:name=".FinalSearchActivity"></activity>
         <activity android:name=".SettingActivity"></activity>
+        <activity android:name=".searchRoute"></activity>
+        <activity android:name=".SearchRouteResult"></activity>
+        <activity android:name=".StationMapActivity"></activity>
+        <activity android:name=".SearchMap"></activity>
     </application>
 
 </manifest>

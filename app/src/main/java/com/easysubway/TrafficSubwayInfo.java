@@ -95,7 +95,7 @@ public class TrafficSubwayInfo extends BaseActivity
     private ArrayList<String> lineArrayList = new ArrayList();
     private HashSet<String> lineHashSet = new HashSet();
     private CustomProgressDialog customProgressDialog;
-    private TextView subway_inf;
+
     //ExitInfo
     private TextView exitinfo;
 
@@ -126,12 +126,12 @@ public class TrafficSubwayInfo extends BaseActivity
         if(extras.getBoolean("is_theme_white")==false)
         {
             System.out.println("hii");
-            this.setContentView(R.layout.traffic_subway_info_black);
+            this.setContentView(R.layout.traffic_subway_info);
         }
         else
         {
             System.out.println("bye");
-            this.setContentView(R.layout.traffic_subway_info);
+            this.setContentView(R.layout.traffic_subway_info_black);
         }
 
         this.heightPx = (int) TypedValue.applyDimension(1, 27.0F, this.getResources().getDisplayMetrics());
@@ -454,11 +454,11 @@ public class TrafficSubwayInfo extends BaseActivity
 
                     if(extra.getBoolean("is_theme_white")==false)
                     {
-                        time.setTextColor(Color.parseColor("#FFFFFF"));
+                        time.setTextColor(Color.parseColor("#00000"));
                     }
                     else
                     {
-                        time.setTextColor(Color.parseColor("#000000"));
+                        time.setTextColor(Color.parseColor("#FFFFFF"));
                     }
                     if(((FirstLastTimeInfo)this.firstLastTimeInfoArrayList.get(i)).getLastcarDiv().equals("1")) {
                         time.setText(((FirstLastTimeInfo)this.firstLastTimeInfoArrayList.get(i)).getWeekendTranHour() + " " + ((FirstLastTimeInfo)this.firstLastTimeInfoArrayList.get(i)).getSubwayename());
@@ -475,13 +475,12 @@ public class TrafficSubwayInfo extends BaseActivity
 
                     if(extra.getBoolean("is_theme_white")==false)
                     {
-                        time.setTextColor(Color.parseColor("#FFFFFF"));
+                        time.setTextColor(Color.parseColor("#000000"));
                     }
                     else
                     {
-                        time.setTextColor(Color.parseColor("#000000"));
+                        time.setTextColor(Color.parseColor("#FFFFFF"));
                     }
-                    //time.setTextColor(Color.parseColor("#000000"));
                     if(((FirstLastTimeInfo)this.firstLastTimeInfoArrayList.get(i)).getLastcarDiv().equals("1")) {
                         time.setText(((FirstLastTimeInfo)this.firstLastTimeInfoArrayList.get(i)).getWeekendTranHour() + " " + ((FirstLastTimeInfo)this.firstLastTimeInfoArrayList.get(i)).getSubwayename());
                         this.downLineFirst.addView(time);
