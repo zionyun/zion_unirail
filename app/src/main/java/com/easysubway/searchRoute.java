@@ -90,13 +90,13 @@ public class searchRoute extends BaseActivity {
                     @Override
                     public void onClick(View v)
                     {
-                        Intent intent=new Intent(searchRoute.this, StartSearchActivity.class);
+                        Intent intent=new Intent(searchRoute.this,StartSearchActivity.class);
                         intent.putExtra("is_theme_white", is_theme_white);
                         intent.putExtra("start",start_station.getText());
                         intent.putExtra("final",final_station.getText());
                         startActivity(intent);
                     }
-            }
+                }
         );
 
         final_search.setOnClickListener(
@@ -105,7 +105,7 @@ public class searchRoute extends BaseActivity {
                     @Override
                     public void onClick(View v)
                     {
-                        Intent intent=new Intent(searchRoute.this, FinalSearchActivity.class);
+                        Intent intent=new Intent(searchRoute.this,FinalSearchActivity.class);
                         intent.putExtra("is_theme_white", is_theme_white);
                         intent.putExtra("start",start_station.getText());
                         intent.putExtra("final",final_station.getText());
@@ -120,7 +120,7 @@ public class searchRoute extends BaseActivity {
                     @Override
                     public void onClick(View v)
                     {
-                        Intent intent=new Intent(searchRoute.this, SearchRouteResult.class);
+                        Intent intent=new Intent(searchRoute.this,SearchRouteResult.class);
                         intent.putExtra("is_theme_white", is_theme_white);
                         intent.putExtra("startStation",start_station.getText().toString());
                         intent.putExtra("finalStation",final_station.getText().toString());

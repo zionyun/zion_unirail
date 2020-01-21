@@ -14,8 +14,7 @@ public class StationMapActivity extends Activity {
         setContentView(R.layout.activity_station_map);
         String InputStation;
         PhotoView photoView = findViewById(R.id.photoView);
-//        photoView.setImageResource(R.drawable.dongmyo);
-        Bundle extras = getIntent().getExtras();
+        //Bundle extras = getIntent().getExtras();
         InputStation = getIntent().getStringExtra("InputStation");
         System.out.println(InputStation);
 
@@ -140,9 +139,6 @@ public class StationMapActivity extends Activity {
         InputStation_to_ImageResource.put("총신대입구", R.drawable.chongshin_univ);
         //InputStation_to_ImageResource.put("사당",R.drawable.sadang);
         InputStation_to_ImageResource.put("남태령", R.drawable.namtaeryeong);
-
-
-
 
         try{
             int ImageResouce = InputStation_to_ImageResource.get(InputStation);

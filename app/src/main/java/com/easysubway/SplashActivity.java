@@ -5,9 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-/**
- * Created by eunhye Lee on 2017-08-04.
- */
 
 public class SplashActivity extends Activity
 {

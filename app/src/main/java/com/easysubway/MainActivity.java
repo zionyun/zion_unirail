@@ -16,6 +16,8 @@ import kr.go.seoul.trafficsubway.Common.BaseActivity;
 
 public class MainActivity extends BaseActivity {
 
+    private int count; // 우리가 다른 액티비티에서 쓸 변수
+
     boolean is_theme_white = false;
 
     private Button black_theme;
@@ -30,6 +32,7 @@ public class MainActivity extends BaseActivity {
     private TextView textmain;
     public static Context mContext;
 
+
     public MainActivity()
     {
         openAPIKey = "71536a5044736861373274514e706b";
@@ -41,6 +44,8 @@ public class MainActivity extends BaseActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        count = 0;
+
         Rlayout = findViewById(R.id.Rlayout);
         black_theme = findViewById(R.id.black_theme);
         white_theme = findViewById(R.id.white_theme);
@@ -57,9 +62,11 @@ public class MainActivity extends BaseActivity {
                     @Override
                     public void onClick(View v)
                     {
-                        Intent intent=new Intent(MainActivity.this, searchRoute.class);
-                        intent.putExtra("is_theme_white", is_theme_white);
-                        startActivity(intent);
+                        //if(count != 0) {
+                            Intent intent = new Intent(MainActivity.this, searchRoute.class);
+                            intent.putExtra("is_theme_white", is_theme_white);
+                            startActivity(intent);
+                       // } -> count 변수 설정에 is_theme_white 넣으려고 만드는 도중
                     }
             }
         );
@@ -71,6 +78,7 @@ public class MainActivity extends BaseActivity {
                             @Override
                             public void onClick(View v)
                             {
+                                System.out.println(count);
                                 is_theme_white = true;
                                 black_theme.setBackgroundColor(Color.BLACK);
                                 white_theme.setBackgroundColor(Color.BLACK);
@@ -156,6 +164,14 @@ public class MainActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    public void setCount(int count){
+        this.count = count;
+    }
+
+    public int getCount(){
+        return count;
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data){

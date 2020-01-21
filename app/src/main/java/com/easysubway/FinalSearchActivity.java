@@ -16,7 +16,7 @@ import java.util.Iterator;
 public class FinalSearchActivity extends Activity {
     public static MyMenu menu = new MyMenu();
     ArrayList<String> items = new ArrayList<>();
-    ListViewAdapter adapter;
+    ListViewAdapter     adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,8 +91,8 @@ public class FinalSearchActivity extends Activity {
 
                 setResult(RESULT_OK,intent);
                 finish();
-         //       WebViewInterface.mContext.startActivity(intent);
-          //      startActivity(intent);
+                //       WebViewInterface.mContext.startActivity(intent);
+                //      startActivity(intent);
             }
         });
 

@@ -65,28 +65,6 @@ public class SearchActivity extends Activity {
 
         ListView list = (ListView)findViewById(R.id.listViewSearch);
 
-//        // 메뉴 선택 시 해당 메뉴 Recipe Activity. start()
-//        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                Bundle extras=getIntent().getExtras();
-//                boolean is_theme_white;
-//                is_theme_white = extras.getBoolean("is_theme_white");
-//
-//                ListViewItem item = (ListViewItem)parent.getItemAtPosition(position);
-//                String itemTitle = item.getTitle();
-//                Intent intent = new Intent(SearchActivity.this, TrafficSubwayInfo.class);
-//               // intent.putExtra("is_theme_white", is_theme_white);
-//                intent.putExtra("boolean-keyword", true);
-//                intent.putExtra("OpenAPIKey", WebViewInterface.openAPIKey);
-//                intent.putExtra("SubwayLocationAPIKey", WebViewInterface.subwayLocationAPIKey);
-//                intent.putExtra("StationNM", itemTitle);
-//                intent.putExtra("is_theme_white", is_theme_white);
-//                WebViewInterface.mContext.startActivity(intent);
-//                startActivity(intent);
-//            }
-//        });
-
         // 메뉴 선택 시 해당 메뉴 Recipe Activity. start()
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -98,7 +76,6 @@ public class SearchActivity extends Activity {
                 ListViewItem item = (ListViewItem)parent.getItemAtPosition(position);
                 String itemTitle = item.getTitle();
                 Intent intent = new Intent(SearchActivity.this, searchRoute.class);
-                // intent.putExtra("is_theme_white", is_theme_white);
                 intent.putExtra("boolean-keyword", true);
                 intent.putExtra("OpenAPIKey", WebViewInterface.openAPIKey);
                 intent.putExtra("SubwayLocationAPIKey", WebViewInterface.subwayLocationAPIKey);

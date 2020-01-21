@@ -16,7 +16,7 @@ import java.util.Iterator;
 public class StartSearchActivity extends Activity {
     public static MyMenu menu = new MyMenu();
     ArrayList<String> items = new ArrayList<>();
-    ListViewAdapter adapter;
+    ListViewAdapter     adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +57,7 @@ public class StartSearchActivity extends Activity {
                 intent.putExtra("is_start","true");
                 intent.putExtra("start",getIntent().getStringExtra("start"));
                 intent.putExtra("final",getIntent().getStringExtra("final"));
-               // intent.putExtra("INPUT_TEXT","명지대역");
+                // intent.putExtra("INPUT_TEXT","명지대역");
 
 
                 setResult(RESULT_OK,intent);

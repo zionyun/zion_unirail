@@ -1,6 +1,7 @@
 package com.easysubway;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -16,9 +17,7 @@ public class SettingActivity extends Activity {
     private Button black_theme;
     private Button white_theme;
     private Button start_activity;
-    //private Button change_theme;
 
-   // Button button_color;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

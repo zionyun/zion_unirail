@@ -38,10 +38,6 @@ import kr.go.seoul.trafficsubway.Common.FontUtils;
 import kr.go.seoul.trafficsubway.Common.RealtimeStationArrivalInfo;
 import kr.go.seoul.trafficsubway.Common.StationInfo;
 
-/**
- * Created by eunhye Lee on 2017-08-08.
- */
-
 public class TrafficSubwayInfo extends BaseActivity
 {
     private int heightPx;
