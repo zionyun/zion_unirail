@@ -159,7 +159,7 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, SettingActivity.class);
-                intent.putExtra("boolean-keyword", true);
+                //intent.putExtra("boolean-keyword", true);
 
                 startActivity(intent);
             }

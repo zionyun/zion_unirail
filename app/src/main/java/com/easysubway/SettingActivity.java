@@ -3,7 +3,7 @@ package com.easysubway;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.view.View;
@@ -11,12 +11,14 @@ import android.widget.Button;
 
 public class SettingActivity extends Activity {
 
-    boolean is_theme_white = false;
+    // boolean is_theme_white = false;
 
     private ConstraintLayout layout;
-    private Button black_theme;
-    private Button white_theme;
+    private Button hi;
+    private Button bye;
     private Button start_activity;
+    private Context context;
+    private AudioManager mAudioManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +26,37 @@ public class SettingActivity extends Activity {
         setContentView(R.layout.activity_setting);
 
         layout = findViewById(R.id.layout);
-        black_theme = findViewById(R.id.black_theme);
-        white_theme = findViewById(R.id.white_theme);
         start_activity=findViewById(R.id.start_activity);
-        black_theme.setOnClickListener
+        hi = findViewById(R.id.hi);
+        bye = findViewById(R.id.bye);
+
+
+        hi.setOnClickListener
+                (
+                        new View.OnClickListener()
+                        {
+                            private Context context;
+
+                            @Override
+                            public void onClick(View v)
+                            {
+
+
+                            }
+                        }
+                );
+        bye.setOnClickListener
+                (
+                        new View.OnClickListener()
+                        {
+                            @Override
+                            public void onClick(View v)
+                            {
+                                //                     aManager.setRingerMode(AudioManager.RINGER_MODE_VIBRATE);
+                            }
+                        }
+                );
+        /*black_theme.setOnClickListener
                 (
                         new View.OnClickListener()
                         {
@@ -62,7 +91,8 @@ public class SettingActivity extends Activity {
                                 start_activity.setTextColor(Color.BLACK);
                             }
                         }
-                );
+                );*/
+
         start_activity.setOnClickListener
                 (
                         new View.OnClickListener()
@@ -71,7 +101,7 @@ public class SettingActivity extends Activity {
                             public void onClick(View v)
                             {
                                 Intent intent= new Intent(SettingActivity.this, MainActivity.class);
-                                intent.putExtra("is_theme_white",is_theme_white);
+                                //intent.putExtra("is_theme_white",is_theme_white);
                                 startActivity(intent);
                             }
                         }

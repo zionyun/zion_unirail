@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class SearchMap extends Activity {
-    public static MyMenu menu = new MyMenu();
+    public static MyMenuMap menu = new MyMenuMap();
     ArrayList<String> items = new ArrayList<>();
     ListViewAdapter adapter;
 
