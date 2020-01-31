@@ -22,7 +22,7 @@ public class MainActivity extends BaseActivity {
 
     private Button black_theme;
     private Button white_theme;
-    //private Button search;
+    private Button recent_search;
     private Button search_route;
     private Button start_activity;
     private RelativeLayout Rlayout;
@@ -49,13 +49,24 @@ public class MainActivity extends BaseActivity {
         Rlayout = findViewById(R.id.Rlayout);
         black_theme = findViewById(R.id.black_theme);
         white_theme = findViewById(R.id.white_theme);
-        //search_route = findViewById(R.id.start_search1);
+        recent_search = findViewById(R.id.recent_search);
         search_route = findViewById(R.id.search_route);
         textmain = findViewById(R.id.textmain);
         station_info = findViewById(R.id.station_info);
         start_activity=findViewById(R.id.start_activity);
 
-
+        recent_search.setOnClickListener(
+                new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View v)
+                    {
+                        Intent intent=new Intent(MainActivity.this,RecentRoute.class);
+                        intent.putExtra("is_theme_white", is_theme_white);
+                        startActivity(intent);
+                    }
+                }
+        );
         search_route.setOnClickListener(
                 new View.OnClickListener()
                 {

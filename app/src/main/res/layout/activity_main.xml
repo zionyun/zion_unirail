@@ -38,20 +38,25 @@
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:text="1 경로 검색 " />
-
+    <Button
+        android:id="@+id/recent_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="2 최근 경로 " />
     <Button
         android:id="@+id/station_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
-        android:text="2 역정보" />
+        android:text="3 역정보" />
 
     <Button
         android:id="@+id/start_activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
-        android:text="3 설정" />
+        android:text="4 설정" />
 
     <Button
         android:id="@+id/black_theme"
@@ -59,14 +64,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
-        android:text="black theme" />
+        android:text="저시력테마" />
 
     <Button
         android:id="@+id/white_theme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
-        android:text="white theme" />
+        android:text="기본테마" />
 
     <View
         android:layout_width="match_parent"
